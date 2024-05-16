@@ -5,7 +5,7 @@ MD_SOURCES:= $(shell find $(MD_DIR) -name '*.md' | sed 's/src//')
 HTML_FILES:= $(addprefix $(HTML_OUT_DIR), $(MD_SOURCES:%.md=%.html))
 HTML_TEMPLATE=template.html
 PANDOCFLAGS=--from markdown --to html5 --standalone --no-highlight --metadata=title:"Nathans page" 
-RELEASE_ARCHIVE= release.tar.gz
+RELEASE_ARCHIVE=release.tar.gz
 ARCHIVE=tar
 ARHCIVEFLAGS=-czvf
 
