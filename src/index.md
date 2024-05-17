@@ -2,7 +2,7 @@
 
 I'm a recent undergrad from Trent University.
 
-I'm currently interested in Computer Graphics, low-level programming, high-performance computing, and just general hacking around. 
+I'm currently interested in Computer Graphics, Geographic Information Systems(GIS), low-level programming, high-performance computing, and just general hacking around. 
 
 I mostly program in C on Linux, although im always looking to challenge myself, learning new things and pushing myself out of my comfort zone, like building this website!
 

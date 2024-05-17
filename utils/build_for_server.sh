@@ -1,0 +1,1 @@
+make BASE_URL=https://nathanlapp.xyz clean build
