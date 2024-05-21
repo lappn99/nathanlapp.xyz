@@ -1,5 +1,6 @@
 .vscode/
 *.tar.gz
-public_html/
+www/
+public_html//
 auxiliary/navbar.html
 auxiliary/footer.html
