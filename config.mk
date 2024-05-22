@@ -12,7 +12,7 @@ PANDOCFLAGS=--from markdown --to html5 --standalone \
 	--include-after-body=auxiliary/footer.html \
 	--template auxiliary/template.html
 
-RELEASE_ARCHIVE= release.tar.gz
+RELEASE_ARCHIVE=nathanlapp.xyz.tar.gz
 ARCHIVE=tar
 ARHCIVEFLAGS=-czvf
 MAKE=make
