@@ -22,8 +22,5 @@ clean:
 	rm -f readbean.com
 
 
-readbean.com: build 
-	$(MAKE) -C redbean readbean.com
-
-run: readbean.com
-	bash -c './readbean.com' -v
+run: build
+	xdg-open http://localhost

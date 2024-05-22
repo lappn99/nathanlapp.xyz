@@ -12,4 +12,4 @@ PAYLOAD=$(gh api \
    -f "tag_name=v$DATE" -f "target_commitish=main" -f "name=v$DATE" -f "body=[nathanlapp.xyz](https://nathanlapp.xyz) build on $DATE" -F "draft=false" -F "prerelease=false" -F "generate_release_notes=false")
 
 
-gh release upload v$DATE ./release.tar.gz
+gh release upload v$DATE ./nathanlapp.xyz.tar.gz
