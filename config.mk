@@ -1,5 +1,5 @@
 MD_DIR=src
-HTML_OUT_DIR?=www
+HTML_OUT_DIR?=public_html
 MD_SOURCES:= $(shell find $(MD_DIR) -name '*.md' | sed 's/src//') 
 BASE_URL?=$(PWD)/public_html
 

@@ -1,5 +1,6 @@
 [home](/)
 [github](https://github.com/lappn99)
+[itch.io](https://redrebelinteractive.itch.io/)
 [linkedin](https://www.linkedin.com/in/nathangtlapp/)
 [projects](/projects/)
-[garden](/garden/)
+[portfolio](/portfolio/)

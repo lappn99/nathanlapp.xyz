@@ -23,4 +23,4 @@ clean:
 
 
 run: build
-	xdg-open http://localhost
+	xdg-open "public_html/index.html"

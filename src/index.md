@@ -6,7 +6,7 @@ I'm currently interested in Computer Graphics, Geographic Information Systems (G
 
 I mostly program in C on Linux, although im always looking to challenge myself, learning new things and pushing myself out of my comfort zone, like building this website!
 
-Check out some of my [projects](projects/projects.html)
+Check out some of my [projects](projects/index.html)
 
 ---
 
