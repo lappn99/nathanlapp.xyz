@@ -1,3 +1,18 @@
+
+<style type="text/css" rel="stylesheet">
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+
+  border-radius: 25px;
+}
+
+
+</style>
+
 ## Hello, im Nathan Lapp
 
 I'm a recent undergrad from Trent University.
@@ -10,4 +25,4 @@ Check out some of my [projects](projects/index.html)
 
 ---
 
-![Me with my (at the time) puppy, Rebel.](https://nathanlapp.xyz/media/me.jpg)
+![](https://nathanlapp.xyz/media/me.jpg)
