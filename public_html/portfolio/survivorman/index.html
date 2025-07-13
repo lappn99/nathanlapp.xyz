@@ -172,7 +172,7 @@
     }
 
 
-  body { min-width: 50% !important; }
+  body { min-width: 30% !important; }
 
   </style>
 
@@ -218,6 +218,44 @@ programmer to optimization and graphics debugging.</p>
 Digital Humans</em> (DDH) animation pipeline in Unity. The DDH process
 derives textures and 3D models from real-world performances by actors to
 construct high quality game-ready animations.</p>
+<figure>
+<img src="https://nathanlapp.xyz/media/smvr/ddh_demo.gif"
+alt="DDH in-game demo" />
+<figcaption aria-hidden="true">DDH in-game demo</figcaption>
+</figure>
+<h4 id="challenges">Challenges</h4>
+<p>There were two big challenges that came with making this system:</p>
+<h5 id="performance">Performance</h5>
+<p>This technology was meant to run on natively on the <em>Meta Quest
+2</em>, with Survivorman already pushing the limit of the modest system,
+and <em>Meta</em> having very strict performance requirements, it meant
+that the overhead for DDH had to be extremely minimal. Typically the
+limiting factor for something like this would be the quality of the
+model, animations(s), and the shader. With DDH, the textures for the
+face were baked into a video which was then projected onto the 3D model.
+This meant there was an extra consideration for the video format as we
+had to factor in video decoding on the Quest itself.</p>
+<p>I had to employ tools such as RenderDoc and SnapDragon profiler to do
+extensive low-level profiling and GPU Debugging to optimize DDH to a
+place so that it would not interfer with the performance characteristics
+of the game.</p>
+<h5 id="syncing">Syncing</h5>
+<p>Since the 3D Animation, audio, and video were essentially separate,
+one issue that kept propping up was keeping everything in sync. To fix
+this I had to create a system where each of the three subsystems (Video,
+audio, animation) all had to talk to each other to keep in sync. This
+system also had to account for the dropped frames from the video. Since
+the video was the bottleneck in this whole operation, the other two
+systems had to account for it.</p>
+<hr />
+<h3 id="minigames">Minigames</h3>
+<p>In the actual game I primarily worked on the minigames that intercut
+the main levels.</p>
+<figure>
+<img src="https://nathanlapp.xyz/media/smvr/smvr_minigame1.gif"
+alt="Glissade Minigame" />
+<figcaption aria-hidden="true">Glissade Minigame</figcaption>
+</figure>
 <hr />
 <p><a href="https://github.com/lappn99/nathanlapp.xyz">website
 source</a></p>
