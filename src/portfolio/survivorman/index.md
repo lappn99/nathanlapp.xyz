@@ -53,4 +53,6 @@ Since the 3D Animation, audio, and video were essentially separate, one issue th
 
 In the actual game I primarily worked on the minigames that intercut the main levels.
 
-![Glissade Minigame](https://nathanlapp.xyz/media/smvr/smvr_minigame1.gif)
+![_Glissade_ Minigame](https://nathanlapp.xyz/media/smvr/smvr_minigame1.gif)
+
+This Minigame saw users _Glissading_ down an icy mountain slope, carefully controlling their slide to avoid obstacles and make it to the bottom. Players control their slide with a metal pole, by dragging the pole on either side of them they can control their speed and direction.
