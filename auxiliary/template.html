@@ -19,13 +19,107 @@ $endif$
   <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
   <style>
     $styles.html()$
+/* Enhance overall layout and typography */
 
-    html {
-      background-color: azure;
+body {
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: #f8f9fa;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  
+  max-width: 1400px;
+  min-height: 100vh;
+  min-width: 50%;
+  display: flex; /* Makes the container a flex container */
+  justify-content: center; /* Horizontally centers the items */
+  align-items: center; /* Vertically centers the items */
+  
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-top: 1.5em;
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #005fa3;
+    text-decoration: underline;
+}
+
+/* Center and style tables */
+table {
+    margin: 2em auto;
+    border-collapse: separate;
+    border-spacing: 20px 10px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+    border-radius: 12px;
+    padding: 1em;
+}
+
+td, th {
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5em 1em;
+}
+
+/* Style images */
+img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+    border: 2px solid #eaeaea;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 4px 16px rgba(44,62,80,0.18);
+    border-color: #0077cc;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+    img {
+        width: 120px;
+        height: 120px;
     }
+    table {
+        border-spacing: 10px 5px;
+        padding: 0.5em;
+    }
+}
+
+/* Add some spacing to sections */
+section, .section {
+    margin-bottom: 2em;
+}
 
 
-  body { min-width: 50% !important; }
+.container {
+  margin-left: 50vh;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 32px 48px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+
+      
+}
+
 
   </style>
 $for(css)$
@@ -44,11 +138,15 @@ $endif$
   <base href="$base_url$">
 
 </head>
+
 <body>
+<div class="container">
+  <div class="page-content">
 $for(include-before)$
 $include-before$
 $endfor$
 $if(title)$
+
 <header id="title-block-header">
 <h1 class="title">$title$</h1>
 $if(subtitle)$
@@ -80,5 +178,8 @@ $body$
 $for(include-after)$
 $include-after$
 $endfor$
+</div>
+</div>
 </body>
+
 </html>

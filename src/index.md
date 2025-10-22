@@ -1,17 +1,4 @@
 
-<style type="text/css" rel="stylesheet">
-
-img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-
-  border-radius: 25px;
-}
-
-
-</style>
 
 ## Hello, im Nathan Lapp
 
