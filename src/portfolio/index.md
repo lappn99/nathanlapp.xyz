@@ -22,7 +22,7 @@ Hello! Im Nathan Lapp, a game developer that is passionate about creative game d
 
 |Survivorman VR|MOJII|DENG GAO SHANG GAO RēVERIE|
 |--------------|--------------|--------------|
-|[![Survivor Man VR logo](https://nathanlapp.xyz/media/svr.jpeg)](/portfolio/survivorman)|[![Survivor Man VR logo](https://nathanlapp.xyz/media/svr.jpeg)](https://www.invalidsymbol.com/fuelpunks/)|[![Gameplay GIF](https://nathanlapp.xyz/media/picnicvr.gif)](/portfolio/picnicvr)|
+|[![Survivor Man VR logo](https://nathanlapp.xyz/media/svr.jpeg)](portfolio/survivorman)|[![Survivor Man VR logo](https://nathanlapp.xyz/media/svr.jpeg)](https://www.invalidsymbol.com/fuelpunks/)|[![Gameplay GIF](https://nathanlapp.xyz/media/picnicvr.gif)](portfolio/picnicvr)|
 
 ### Indie work
 
