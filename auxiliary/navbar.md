@@ -1,6 +1,6 @@
 [home]()
-[projects](/nathanlapp.xyz/projects/)
-[portfolio](/nathanlapp.xyz/portfolio/)
+[projects](projects/)
+[portfolio](portfolio/)
 [github](https://github.com/lappn99)
 [itch.io](https://redrebelinteractive.itch.io/)
 [linkedin](https://www.linkedin.com/in/nathangtlapp/)

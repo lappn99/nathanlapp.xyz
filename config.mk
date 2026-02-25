@@ -1,7 +1,7 @@
 MD_DIR=src
 HTML_OUT_DIR?=public_html
 MD_SOURCES:= $(shell find $(MD_DIR) -name '*.md' | sed 's/src//') 
-BASE_URL?=$(PWD)/public_html
+BASE_URL?=https://lappn99.github.io/nathanlapp.xyz/
 
 HTML_FILES:= $(addprefix $(HTML_OUT_DIR), $(MD_SOURCES:%.md=%.html))
 HTML_TEMPLATE=template.html
@@ -10,7 +10,8 @@ PANDOCFLAGS=--from markdown --to html5 --standalone \
 	--metadata=title:"Nathan Lapp" \
 	--include-before-body=auxiliary/navbar.html \
 	--include-after-body=auxiliary/footer.html \
-	--template auxiliary/template.html
+	--template auxiliary/template.html \
+	-V base_url:$(BASE_URL)
 
 RELEASE_ARCHIVE=nathanlapp.xyz.tar.gz
 ARCHIVE=tar

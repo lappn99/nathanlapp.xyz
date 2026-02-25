@@ -12,4 +12,4 @@ Check out some of my [projects](projects/index.html)
 
 ---
 
-![](https://nathanlapp.xyz/media/me.jpg)
+![](Media/me.jpg)
