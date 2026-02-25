@@ -17,3 +17,4 @@ RELEASE_ARCHIVE=nathanlapp.xyz.tar.gz
 ARCHIVE=tar
 ARHCIVEFLAGS=-czvf
 MAKE=make
+MEDIA_DIR=Media

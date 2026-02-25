@@ -1,6 +1,6 @@
 include ./config.mk
 
-build: auxiliary_files $(HTML_FILES)
+build: auxiliary_files $(HTML_FILES) media
 
 $(HTML_OUT_DIR)/%.html: $(MD_DIR)/%.md 
 	@mkdir -p ${dir $@}
@@ -11,6 +11,9 @@ $(RELEASE_ARCHIVE): build
 	$(ARCHIVE) $(ARHCIVEFLAGS) $@ $(HTML_OUT_DIR)
 
 release: $(RELEASE_ARCHIVE)
+
+media:
+	cp -r $(MEDIA_DIR) $(HTML_OUT_DIR)
 
 auxiliary_files:
 	$(MAKE) -C auxiliary
