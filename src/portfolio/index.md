@@ -22,10 +22,10 @@ Hello! Im Nathan Lapp, a game developer that is passionate about creative game d
 
 |Survivorman VR|MOJII|DENG GAO SHANG GAO RēVERIE|
 |--------------|--------------|--------------|
-|[![Survivor Man VR logo](https://nathanlapp.xyz/media/svr.jpeg)](portfolio/survivorman/)|[![Survivor Man VR logo](https://nathanlapp.xyz/media/svr.jpeg)](https://www.invalidsymbol.com/fuelpunks/)|[![Gameplay GIF](Media/picnicvr.gif)](portfolio/picnicvr/)|
+|[![Survivor Man VR logo](Media/smvr.jpeg)](portfolio/survivorman/)|[![Survivor Man VR logo](Media/smvr.jpeg)](https://www.invalidsymbol.com/fuelpunks/)|[![Gameplay GIF](Media/picnicvr.gif)](portfolio/picnicvr/)|
 
 ### Indie work
 
 |Spider Canyon|Gold Scopa|Last of the Mystics|
 |--------------|--------------|--------------|
-|[![Spider Canyon Vertical Capsule](Media/spider_canyon_thumbnail.png)](https://store.steampowered.com/app/3451200/Spider_Canyon/)|[![Gold Scopa](Media/GoldScopa_Thumbnail.png)](https://redrebelinteractive.itch.io/gold-scopa)|[![LOTM](https://nathanlapp.xyz/media/lotm.png)](https://redrebelinteractive.itch.io/last-of-the-mystics)|
+|[![Spider Canyon Vertical Capsule](Media/spider_canyon_thumbnail.png)](https://store.steampowered.com/app/3451200/Spider_Canyon/)|[![Gold Scopa](Media/GoldScopa_Thumbnail.png)](https://redrebelinteractive.itch.io/gold-scopa)|[![LOTM](Media/lotm.png)](https://redrebelinteractive.itch.io/last-of-the-mystics)|

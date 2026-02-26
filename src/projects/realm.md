@@ -23,8 +23,8 @@ Development has mainly ceased because I switched to Linux from windows, but I am
 
 ---
 
-![Video demo](https://nathanlapp.xyz/media/realm_showcase.gif)
+![Video demo](Media/realm_demo.gif)
 
 ---
 
-![Early terrain generation](https://nathanlapp.xyz/media/realm_landscape.png)
+![Early terrain generation](Media/realm_landscape.png)

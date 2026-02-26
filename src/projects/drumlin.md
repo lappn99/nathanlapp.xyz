@@ -25,4 +25,4 @@ It is named after the beautiful [drumlin field in and around Peterborough, Ontar
 
 ---
 
-![Peterborough with vector line dataset of census tracts rendered in *Drumlin*](https://nathanlapp.xyz/media/drumlin_example.png)
+![Peterborough with vector line dataset of census tracts rendered in *Drumlin*](Media/drumlin.png)
