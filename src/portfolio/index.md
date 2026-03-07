@@ -18,14 +18,14 @@ Hello! Im Nathan Lapp, a game developer that is passionate about creative game d
 
 ## Some of the games I have on worked:
 
-### Professional work
+### Released Games
 
-|Survivorman VR|MOJII|DENG GAO SHANG GAO RēVERIE|
+|Survivorman VR|Spider Canyon|DENG GAO SHANG GAO RēVERIE|
 |--------------|--------------|--------------|
-|[![Survivor Man VR logo](Media/smvr.jpeg)](portfolio/survivorman/)|[![Survivor Man VR logo](Media/smvr.jpeg)](https://www.invalidsymbol.com/fuelpunks/)|[![Gameplay GIF](Media/picnicvr.gif)](portfolio/picnicvr/)|
+|[![Survivor Man VR logo](Media/smvr.jpeg)](portfolio/survivorman/)|[![Spider Canyon Vertical Capsule](Media/spider_canyon_thumbnail.png)](https://store.steampowered.com/app/3451200/Spider_Canyon/)|[![Gameplay GIF](Media/picnicvr.gif)](portfolio/picnicvr/)|
 
 ### Indie work
 
-|Spider Canyon|Gold Scopa|Last of the Mystics|
+|Snowman Factory|Gold Scopa|Last of the Mystics|
 |--------------|--------------|--------------|
-|[![Spider Canyon Vertical Capsule](Media/spider_canyon_thumbnail.png)](https://store.steampowered.com/app/3451200/Spider_Canyon/)|[![Gold Scopa](Media/GoldScopa_Thumbnail.png)](https://redrebelinteractive.itch.io/gold-scopa)|[![LOTM](Media/lotm.png)](https://redrebelinteractive.itch.io/last-of-the-mystics)|
+|[![Snowman Factory](Media/snowman_factory.png)](portfolio/snowman_factory)|[![Gold Scopa](Media/GoldScopa_Thumbnail.png)](portfolio/gold_scopa)|[![LOTM](Media/lotm.png)](portfolio/lotm)|
