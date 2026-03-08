@@ -25,5 +25,7 @@ Since this project was a joint venture, I was the lead developer on this project
 * Load/Save system
 * Creating tools to aid in Level Development
 * UI and Options menu
+* Sound Effects
+* Visual Effects
 
-A big chunk of work also went into the visuals of the game. The game underwent a *huge* visual overhaul from the itch.io release and the final release. This was probably the single biggest change, along with the First Person Controller, and lots of tweaking went into both to get it _just right_. 
+A big chunk of my work also went into the visuals of the game. The game underwent a *huge* visual overhaul from the itch.io release and the final release. This was probably the single biggest change, along with the First Person Controller, and lots of tweaking went into both to get it _just right_. 
