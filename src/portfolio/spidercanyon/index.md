@@ -10,6 +10,9 @@ img{
 
 # Spider Canyon
 
+### [Steam Page](https://store.steampowered.com/app/3451200/Spider_Canyon/)
+
+
 ## About
 
 _Spider Canyon_ is a single player puzzle platformer where the player has to bounce off webs they place to reach the finish line. It was originally made for a _Mini Jam 175: Gravity_ but after submitting me and my jam partner saw the potential in it and an oppourtunity to properly release a game on Steam.
@@ -48,6 +51,4 @@ A big chunk of my work also went into the visuals of the game. The game underwen
 ![](Media/sc_after.jpg)
 
 ---
-
-### [Steam Page](https://store.steampowered.com/app/3451200/Spider_Canyon/)
 
