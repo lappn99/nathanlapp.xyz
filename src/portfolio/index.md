@@ -22,7 +22,7 @@ Hello! Im Nathan Lapp, a game developer that is passionate about creative game d
 
 |Survivorman VR|Spider Canyon|DENG GAO SHANG GAO RēVERIE|
 |--------------|--------------|--------------|
-|[![Survivor Man VR logo](Media/smvr.jpeg)](portfolio/survivorman/)|[![Spider Canyon Vertical Capsule](Media/spider_canyon_thumbnail.png)](https://store.steampowered.com/app/3451200/Spider_Canyon/)|[![Gameplay GIF](Media/picnicvr.gif)](portfolio/picnicvr/)|
+|[![Survivor Man VR logo](Media/smvr.jpeg)](portfolio/survivorman)|[![Spider Canyon Vertical Capsule](Media/hero_capsule.jpg)](portfolio/spidercanyon)|[![Gameplay GIF](Media/picnicvr.gif)](portfolio/picnicvr/)|
 
 ### Indie work
 

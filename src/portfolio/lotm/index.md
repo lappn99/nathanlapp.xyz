@@ -1,3 +1,15 @@
+<style type="text/css" rel="stylesheet">
+
+img{
+    width: 40%;
+    height: 40%;
+}
+
+
+
+
+</style>
+
 # Last of the Mystics
 
 ### Submission for _Mini Jam 171: Mystic_ and _"Finish Your Game" Jam 2024_
@@ -15,6 +27,9 @@ Godot
 ## About
 
 Initially made over 72 hours, _Last of the Mystics_ is an action-roguelike where the user fights off a ever escalating horde of enemies and builds their character through collecting an aresnal of weapons and upgrades. The game was created for _Mini Jam 171: Mystic_ and further refined for _"Finish Your Game" Jam 2024_, which is a non-competitive week-long game jam for the purpose of finishing past projects. 
+
+![](Media/lotm.gif) 
+
 
 ---
 

@@ -2,13 +2,14 @@
 
 ## Hello, im Nathan Lapp
 
-I'm a recent undergrad from Trent University.
+I'm a Game Developer based in Toronto.
 
-I'm currently interested in Computer Graphics, Geographic Information Systems (GIS), low-level programming, high-performance computing, and just general hacking around. 
+I am primarily someone who designs and implements game systems but I am also interested in game design, sound design, and music. All of which I do for my own games.
 
-I mostly program in C on Linux, although im always looking to challenge myself, learning new things and pushing myself out of my comfort zone, like building this website!
 
-Check out some of my [projects](projects/index.html)
+I have a background in Computer Science, specifically Computer Graphics, Data Structures, and High Performance Computing, as well as Geographic Information Systems (GIS). You can check out some of my side projects [here](projects/) as well as the games I've developed [here.](portfolio/)
+
+
 
 ---
 

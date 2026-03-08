@@ -19,8 +19,6 @@ Originally starting as a tool for experimenting with terrain generation, `realm`
 * Virtual file system
 * In-house UI rendering and creation
 
-Development has mainly ceased because I switched to Linux from windows, but I am actively porting its current state to Linux.
-
 ---
 
 ![Video demo](Media/realm_demo.gif)
