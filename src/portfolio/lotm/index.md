@@ -14,6 +14,8 @@ img{
 
 ### Submission for _Mini Jam 171: Mystic_ and _"Finish Your Game" Jam 2024_
 
+---
+
 ## Role
 
 Lead Programmer, Game Design, Sound Design, and Music

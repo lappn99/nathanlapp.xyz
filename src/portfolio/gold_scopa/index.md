@@ -16,8 +16,6 @@ img{
 
 Godot
 
-
-
 ---
 
 ## About

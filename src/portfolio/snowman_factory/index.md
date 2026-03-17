@@ -12,6 +12,8 @@ img{
 
 ### Submission for _Micro Jam 52: Winter_
 
+---
+
 ## Role
 
 Lead Programmer, Game Design, Sound Design, and Music

@@ -4,7 +4,7 @@
 
 ## About
 
-_DENG GAO SHANG GAO RēVERIE_ is an experimental VR experience for the _Meta Quest_ developed jointly between _Invalid Symbol_ and _![Music Picnic](http://www.musicpicnic.com/)_. Split into two parts, The user is transported to a surreal - but tranquil - land where they are required to not do anything but soak it all in; set to music of Toronto Composer _Njo Kong Kie_. The experience also features serveral *hidden* ways to interact with the environment via hand gestures. 
+_DENG GAO SHANG GAO RēVERIE_ is an experimental VR experience for the _Meta Quest_ developed jointly between _Invalid Symbol_ and _[Music Picnic](http://www.musicpicnic.com/)_. Split into two parts, The user is transported to a surreal - but tranquil - land where they are required to not do anything but soak it all in; set to music of Toronto Composer _Njo Kong Kie_. The experience also features serveral *hidden* ways to interact with the environment via hand gestures. 
 
 ---
 
