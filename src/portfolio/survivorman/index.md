@@ -31,7 +31,7 @@ During my time with _Cream_ working on this project, I was the only "Programmer"
 
 First and foremost I was the main developer of the _Dynamic Digital Humans_ (DDH) animation pipeline in Unity. The DDH process derives textures and 3D models from real-world performances by actors to construct high quality game-ready animations. 
 
-![DDH in-game demo](https://nathanlapp.xyz/media/smvr/ddh_demo.gif)
+![DDH in-game demo](Media/smvr_ddh.gif)
 
 #### Challenges
 
@@ -53,6 +53,6 @@ Since the 3D Animation, audio, and video were essentially separate, one issue th
 
 In the actual game I primarily worked on the minigames that intercut the main levels.
 
-![_Glissade_ Minigame](https://nathanlapp.xyz/media/smvr/smvr_minigame1.gif)
+![_Glissade_ Minigame](Media/smvr_glissade.gif)
 
 This Minigame saw users _Glissading_ down an icy mountain slope, carefully controlling their slide to avoid obstacles and make it to the bottom. Players control their slide with a metal pole, by dragging the pole on either side of them they can control their speed and direction.
