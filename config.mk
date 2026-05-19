@@ -1,7 +1,7 @@
 MD_DIR=src
 HTML_OUT_DIR?=public_html
 MD_SOURCES:= $(shell find $(MD_DIR) -name '*.md' | sed 's/src//') 
-BASE_URL?=https://lappn99.github.io/nathanlapp.xyz/
+BASE_URL?=http://localhost:8080
 
 HTML_FILES:= $(addprefix $(HTML_OUT_DIR), $(MD_SOURCES:%.md=%.html))
 HTML_TEMPLATE=template.html

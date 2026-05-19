@@ -17,14 +17,15 @@ Hello! Im Nathan Lapp, a game developer that is passionate about creative game d
 
 ## Some of the games I have on worked:
 
-### Released Games
 
-|Survivorman VR|Spider Canyon|DENG GAO SHANG GAO RēVERIE|
+|Survivorman VR|Spider Canyon|Fuel Punks|
 |--------------|--------------|--------------|
 |[![Survivor Man VR logo](Media/smvr.jpeg)](portfolio/survivorman)|[![Spider Canyon Vertical Capsule](Media/hero_capsule.jpg)](portfolio/spidercanyon)|[![Gameplay GIF](Media/picnicvr.gif)](portfolio/picnicvr/)|
 
-### Indie work
-
-|Snowman Factory|Gold Scopa|Last of the Mystics|
+|DENG GAO SHANG GAO RēVERIE|Snowman Factory|Coat for the Goat|
 |--------------|--------------|--------------|
-|[![Snowman Factory](Media/snowman_factory.png)](portfolio/snowman_factory)|[![Gold Scopa](Media/GoldScopa_Thumbnail.png)](portfolio/gold_scopa)|[![LOTM](Media/lotm.png)](portfolio/lotm)|
+|[![Gameplay GIF](Media/picnicvr.gif)](portfolio/picnicvr/)|[![Snowman Factory](Media/snowman_factory.png)](portfolio/snowman_factory)|[![Coat for the Goat](Media/coatforgoat.png)](portfolio/coatforgoat)|
+
+|Gold Scopa|Last of the Mystics|
+|--------------|--------------|
+|[![Gold Scopa](Media/GoldScopa_Thumbnail.png)](portfolio/gold_scopa)|[![LOTM](Media/lotm.png)](portfolio/lotm)|
