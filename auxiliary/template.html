@@ -25,17 +25,16 @@ body {
   font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
   
   color: #222;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   line-height: 1.6;
-  
+
   max-width: 1400px;
   min-height: 100vh;
-  min-width: 50%;
   display: flex; /* Makes the container a flex container */
   justify-content: center; /* Horizontally centers the items */
-  align-items: center; /* Vertically centers the items */
-  
+  align-items: flex-start; /* Align content to the top */
+
 }
 
 h1, h2, h3, h4 {
@@ -94,6 +93,20 @@ img:hover {
     border-color: #0077cc;
 }
 
+/* Thumbnail grids: when a cell is narrower than the image's set width,
+   max-width shrinks the width but a fixed height doesn't follow, so
+   object-fit: cover crops the sides. Keep thumbnails square instead.
+   (`table img` beats the per-page `img { height: ... }` overrides.) */
+table img {
+    height: auto;
+    aspect-ratio: 1 / 1;
+}
+
+/* Keep embeds (e.g. itch.io widgets) from overflowing narrow screens */
+iframe {
+    max-width: 100%;
+}
+
 /* Responsive design */
 @media (max-width: 900px) {
     img {
@@ -103,6 +116,14 @@ img:hover {
     table {
         border-spacing: 10px 5px;
         padding: 0.5em;
+        /* Equal-width columns, so long titles don't shrink their neighbours' thumbnails.
+           Pandoc's base styles make tables display:block, which ignores table-layout. */
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+    td, th {
+        padding: 0.25em;
     }
 }
 
@@ -113,19 +134,22 @@ section, .section {
 
 
 .container {
-  margin-left: 50vh;
-  margin-right: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 40px auto;
   padding: 32px 48px;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(44,62,80,0.08);
-  min-width: 100vh;
+  width: 100%;
+  max-width: 1100px;
+  box-sizing: border-box;
   backdrop-filter: blur(5px);
+}
 
-
-      
+/* Must come after the .container rule above, or it gets overridden */
+@media (max-width: 900px) {
+    .container {
+        padding: 20px 18px;
+    }
 }
 
 .title {
