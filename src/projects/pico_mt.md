@@ -12,7 +12,3 @@ What I did was create a library where the user could set up a couple tasks and h
 
 As this sort of thing requires a good debug environment I also had to setup my own [Pico Probe](https://www.raspberrypi.com/products/debug-probe/), which was quite fun and interesting.
 
----
-
-![(Bottom to top) debug probe, and Pico running the actual program ](https://nathanlapp.xyz/media/pico_probe.jpg)
-
