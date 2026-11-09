@@ -1,220 +1,309 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="$lang$" xml:lang="$lang$"$if(dir)$ dir="$dir$"$endif$>
+<html lang="$lang$">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-$for(author-meta)$
-  <meta name="author" content="$author-meta$" />
-$endfor$
-$if(date-meta)$
-  <meta name="dcterms.date" content="$date-meta$" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>$if(title)$$title$ · Nathan Lapp$else$Nathan Lapp · Gameplay &amp; Systems Programmer$endif$</title>
+  <meta name="description" content="$if(description)$$description$$else$Nathan Lapp is a gameplay and systems programmer in Toronto, working on engine architecture, graphics programming and interactive systems.$endif$" />
+  <meta name="author" content="Nathan Lapp" />
+
+  <!-- Link previews (LinkedIn, Slack, Discord, etc.) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Nathan Lapp" />
+  <meta property="og:title" content="$if(title)$$title$ · Nathan Lapp$else$Nathan Lapp · Gameplay &amp; Systems Programmer$endif$" />
+  <meta property="og:description" content="$if(description)$$description$$else$Gameplay and systems programmer in Toronto, working on engine architecture, graphics programming and interactive systems.$endif$" />
+  <meta property="og:image" content="$site_url$/$if(image)$$image$$else$Media/me.jpg$endif$" />
+  <meta name="twitter:card" content="summary_large_image" />
+$if(redirect)$
+  <meta http-equiv="refresh" content="0; url=$redirect$" />
+  <meta name="robots" content="noindex" />
 $endif$
-$if(keywords)$
-  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
-$endif$
-$if(description-meta)$
-  <meta name="description" content="$description-meta$" />
-$endif$
-  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+
+  <base href="$base_url$" />
+
   <style>
-    $styles.html()$
-/* Enhance overall layout and typography */
+:root {
+  --page-bg: #eef1f4;
+  --card-bg: #ffffff;
+  --text: #1f2933;
+  --muted: #5d6b7a;
+  --heading: #16202b;
+  --accent: #0b66c3;
+  --accent-hover: #084e96;
+  --border: #dfe4ea;
+  --soft: #f6f8fa;
+  --prose: 70ch;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { background: var(--page-bg); }
 
 body {
-  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
-  
-  color: #222;
-  margin: 0 auto;
-  padding: 0;
-  line-height: 1.6;
-
-  max-width: 1400px;
-  min-height: 100vh;
-  display: flex; /* Makes the container a flex container */
-  justify-content: center; /* Horizontally centers the items */
-  align-items: flex-start; /* Align content to the top */
-
+  margin: 0;
+  padding: 32px 16px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--text);
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
-    font-weight: 700;
-    color: #2c3e50;
-    margin-top: 1.5em;
-}
-
-a {
-    color: #0077cc;
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-a:visited {
-  color: #005fa3;
-}
-
-a:hover {
-    color: #005fa3;
-    text-decoration: underline;
-}
-
-/* Center and style tables */
-table {
-    margin: 2em auto;
-    border-collapse: separate;
-    border-spacing: 20px 10px;
-    background: #fff;
-    box-shadow: 0 2px 8px rgba(44,62,80,0.08);
-    border-radius: 12px;
-    padding: 1em;
-}
-
-td, th {
-    text-align: center;
-    vertical-align: middle;
-    padding: 0.5em 1em;
-}
-
-/* Style images */
-img {
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 0px;
-    box-shadow: 0 2px 8px rgba(44,62,80,0.10);
-    border: 2px solid #eaeaea;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-img:hover {
-    transform: scale(1.04);
-    box-shadow: 0 4px 16px rgba(44,62,80,0.18);
-    border-color: #0077cc;
-}
-
-/* Thumbnail grids: when a cell is narrower than the image's set width,
-   max-width shrinks the width but a fixed height doesn't follow, so
-   object-fit: cover crops the sides. Keep thumbnails square instead.
-   (`table img` beats the per-page `img { height: ... }` overrides.) */
-table img {
-    height: auto;
-    aspect-ratio: 1 / 1;
-}
-
-/* Keep embeds (e.g. itch.io widgets) from overflowing narrow screens */
-iframe {
-    max-width: 100%;
-}
-
-/* Responsive design */
-@media (max-width: 900px) {
-    img {
-        width: 120px;
-        height: 120px;
-    }
-    table {
-        border-spacing: 10px 5px;
-        padding: 0.5em;
-        /* Equal-width columns, so long titles don't shrink their neighbours' thumbnails.
-           Pandoc's base styles make tables display:block, which ignores table-layout. */
-        display: table;
-        table-layout: fixed;
-        width: 100%;
-    }
-    td, th {
-        padding: 0.25em;
-    }
-}
-
-/* Add some spacing to sections */
-section, .section {
-    margin-bottom: 2em;
-}
-
-
+/* The white card holding each page */
 .container {
-  margin: 40px auto;
-  padding: 32px 48px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 28px 48px 36px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(22, 32, 43, 0.06);
+}
+
+/* ---------- Header & navigation ---------- */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+.site-header p { margin: 0; }
+.site-header a.site-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--heading);
+  letter-spacing: -0.01em;
+}
+.site-header a.site-name:hover { text-decoration: none; color: var(--accent); }
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 1.25rem;
+}
+.site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.site-nav .nav-main a { font-weight: 600; color: var(--heading); }
+.site-nav .nav-main a:hover { color: var(--accent); }
+.site-nav .nav-external {
+  padding-left: 1.25rem;
+  border-left: 1px solid var(--border);
+}
+.site-nav .nav-external a { color: var(--muted); font-size: 0.95rem; }
+.site-nav .nav-external a:hover { color: var(--accent); }
+
+/* ---------- Typography ---------- */
+h1, h2, h3, h4, h5 {
+  color: var(--heading);
+  line-height: 1.25;
+  font-weight: 700;
+  margin: 1.8em 0 0.6em;
+}
+h1 { font-size: 2.1rem; margin-top: 0.4em; letter-spacing: -0.015em; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.2rem; }
+h4 { font-size: 1.05rem; }
+h5 { font-size: 1rem; color: var(--muted); }
+
+/* Keep running text at a readable line length; grids can still use the full width */
+.page-content p,
+.page-content ul,
+.page-content ol,
+.page-content blockquote,
+.page-content dl { max-width: var(--prose); }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-hover); text-decoration: underline; }
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 2.25rem 0;
+}
+
+blockquote {
+  margin: 0.5rem 0 1.25rem;
+  padding: 0.1rem 1rem;
+  color: var(--muted);
+  border-left: 3px solid var(--border);
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+  font-size: 0.9em;
+  background: var(--soft);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.05em 0.3em;
+}
+
+.page-content li + li { margin-top: 0.2em; }
+
+/* ---------- Images & embeds ---------- */
+/* Screenshots, gifs and photos inside a page: natural shape, never upscaled */
+.page-content img {
+  display: block;
+  max-width: min(100%, 720px);
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+figure { margin: 1.5rem 0; }
+figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+iframe { max-width: 100%; border: 0; }
+
+/* ---------- Thumbnail card grids (portfolio, featured work) ---------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin: 1rem 0 2rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.card:hover {
+  text-decoration: none;
+  color: inherit;
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  box-shadow: 0 8px 20px rgba(22, 32, 43, 0.12);
+}
+.page-content .card img {
   width: 100%;
-  max-width: 1100px;
-  box-sizing: border-box;
-  backdrop-filter: blur(5px);
+  max-width: none;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 0;
+  border-radius: 0;
+}
+.card-title {
+  padding: 0.7rem 0.85rem 0;
+  font-weight: 650;
+  line-height: 1.3;
+  color: var(--heading);
+}
+.card-meta {
+  padding: 0.2rem 0.85rem 0.8rem;
+  font-size: 0.85rem;
+  color: var(--muted);
 }
 
-/* Must come after the .container rule above, or it gets overridden */
-@media (max-width: 900px) {
-    .container {
-        padding: 20px 18px;
-    }
+/* ---------- Project info box (role, engine, etc.) ---------- */
+.project-info {
+  max-width: var(--prose);
+  margin: 1.25rem 0 2rem;
+  padding: 1rem 1.25rem;
+  background: var(--soft);
+  border: 1px solid var(--border);
+  border-radius: 10px;
 }
-
-.title {
-  font-size: 48px;
+.project-info dl {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 0.35rem 1.5rem;
+  margin: 0;
 }
+.project-info dt { font-weight: 600; color: var(--muted); }
+/* Long links (e.g. GitHub URLs) may wrap rather than push the box off narrow screens */
+.project-info dd { margin: 0; overflow-wrap: anywhere; }
 
+/* ---------- Home page ---------- */
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 0.5rem 0 1rem;
+}
+.page-content .intro img {
+  width: 150px;
+  height: 150px;
+  flex: none;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--card-bg);
+  box-shadow: 0 0 0 1px var(--border);
+}
+.intro h1 { margin: 0 0 0.25rem; }
+.intro .tagline { margin: 0; font-size: 1.15rem; color: var(--muted); }
+
+.buttons { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.5rem 0 0.5rem; }
+a.button {
+  display: inline-block;
+  padding: 0.55rem 1.1rem;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  font-weight: 600;
+  color: var(--accent);
+}
+a.button:hover { background: var(--accent); color: #fff; text-decoration: none; }
+a.button.primary { background: var(--accent); color: #fff; }
+a.button.primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
+
+/* ---------- Footer ---------- */
+.site-footer {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.site-footer p { margin: 0; max-width: none; }
+.site-footer a { color: var(--muted); }
+.site-footer a:hover { color: var(--accent); }
+
+/* ---------- Smaller screens ---------- */
+@media (max-width: 800px) {
+  body { padding: 16px 10px; font-size: 16px; }
+  .container { padding: 20px 20px 28px; }
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .site-nav .nav-external { padding-left: 0; border-left: 0; }
+  h1 { font-size: 1.75rem; }
+}
+@media (max-width: 520px) {
+  .intro { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .page-content .intro img { width: 110px; height: 110px; }
+  .project-info { padding: 0.85rem 1rem; }
+  .project-info dl { gap: 0.35rem 1rem; }
+}
   </style>
-$for(css)$
-  <link rel="stylesheet" href="$css$" />
-$endfor$
 $for(header-includes)$
   $header-includes$
 $endfor$
-$if(math)$
-$if(mathjax)$
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-$endif$
-  $math$
-$endif$
-
-  <base href="$base_url$">
-
 </head>
 
 <body>
 <div class="container">
-  <div class="page-content">
 $for(include-before)$
 $include-before$
 $endfor$
-$if(title)$
-
-<header id="title-block-header">
-<h1 class="title">$title$</h1>
-$if(subtitle)$
-<p class="subtitle">$subtitle$</p>
-$endif$
-$for(author)$
-<p class="author">$author$</p>
-$endfor$
-$if(date)$
-<p class="date">$date$</p>
-$endif$
-$if(abstract)$
-<div class="abstract">
-<div class="abstract-title">$abstract-title$</div>
-$abstract$
-</div>
-$endif$
-</header>
-$endif$
-$if(toc)$
-<nav id="$idprefix$TOC" role="doc-toc">
-$if(toc-title)$
-<h2 id="$idprefix$toc-title">$toc-title$</h2>
-$endif$
-$table-of-contents$
-</nav>
-$endif$
+  <main class="page-content">
 $body$
+  </main>
 $for(include-after)$
 $include-after$
 $endfor$
 </div>
-</div>
 </body>
-
 </html>
