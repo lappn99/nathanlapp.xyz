@@ -1,30 +1,53 @@
-
-<style type="text/css" rel="stylesheet">
-
-img{
-    width: 300px;
-    height: 300px;
-}
-
-
-
-
-</style>
+---
+title: Portfolio
+description: "Games Nathan Lapp has worked on, from released VR and Steam titles to game-jam projects."
+image: Media/hero_capsule.jpg
+---
 
 # Portfolio
 
-Hello! Im Nathan Lapp, a game developer that is passionate about creative game design and problem solving. I have worked both professionally and on [hobby projects](projects/).
+I'm a game developer who's passionate about creative game design and problem solving. These are games I've worked on, both professionally and independently. For engine, graphics and tooling work, see my [side projects](projects/).
 
-## Some of the games I have on worked:
+## Released games
 
-### Released Games
+```{=html}
+<div class="grid">
+  <a class="card" href="portfolio/survivorman/">
+    <img src="Media/smvr.jpeg" alt="Survivorman VR: The Descent">
+    <span class="card-title">Survivorman VR: The Descent</span>
+    <span class="card-meta">Programmer · Unity · Meta Quest &amp; PS VR</span>
+  </a>
+  <a class="card" href="portfolio/spidercanyon/">
+    <img src="Media/hero_capsule.jpg" alt="Spider Canyon">
+    <span class="card-title">Spider Canyon</span>
+    <span class="card-meta">Lead developer · Godot · Steam</span>
+  </a>
+  <a class="card" href="portfolio/picnicvr/">
+    <img src="Media/picnicvr.gif" alt="DENG GAO SHANG GAO RēVERIE gameplay">
+    <span class="card-title">DENG GAO SHANG GAO RēVERIE</span>
+    <span class="card-meta">Hand-gesture interactions · Unity · Meta Quest</span>
+  </a>
+</div>
+```
 
-|Survivorman VR|Spider Canyon|DENG GAO SHANG GAO RēVERIE|
-|--------------|--------------|--------------|
-|[![Survivor Man VR logo](Media/smvr.jpeg)](portfolio/survivorman)|[![Spider Canyon Vertical Capsule](Media/hero_capsule.jpg)](portfolio/spidercanyon)|[![Gameplay GIF](Media/picnicvr.gif)](portfolio/picnicvr/)|
+## Indie work
 
-### Indie work
-
-|Snowman Factory|Gold Scopa|Last of the Mystics|
-|--------------|--------------|--------------|
-|[![Snowman Factory](Media/snowman_factory.png)](portfolio/snowman_factory)|[![Gold Scopa](Media/GoldScopa_Thumbnail.png)](portfolio/gold_scopa)|[![LOTM](Media/lotm.png)](portfolio/lotm)|
+```{=html}
+<div class="grid">
+  <a class="card" href="portfolio/coatforgoat/">
+    <img src="Media/coatforgoat.png" alt="Coat for the Goat">
+    <span class="card-title">Coat for the Goat</span>
+    <span class="card-meta">Lead programmer · Unity · ToJam 2026</span>
+  </a>
+  <a class="card" href="portfolio/gold_scopa/">
+    <img src="Media/GoldScopa_Thumbnail.png" alt="Gold Scopa">
+    <span class="card-title">Gold Scopa</span>
+    <span class="card-meta">Passion project · Godot</span>
+  </a>
+  <a class="card" href="portfolio/lotm/">
+    <img src="Media/lotm.png" alt="Last of the Mystics">
+    <span class="card-title">Last of the Mystics</span>
+    <span class="card-meta">Lead programmer · Godot · Game jam</span>
+  </a>
+</div>
+```
