@@ -1,28 +1,32 @@
-## Drumlin
-
-[github link](https://github.com/lappn99/drumlin) 
-
-_Active development_
-
+---
+title: Drumlin
+description: "A native library for building interactive mapping (GIS) applications: raster tile streaming and caching, and raster and vector datasets via GDAL."
+image: Media/drumlin.png
 ---
 
-Im a big fan of maps and geography in general. After working in the realm of Geographic Information Systems (GIS) for a bit my affection for them only grew and I began to realise the potential that GIS has beyond the realm of strictly the sciences. I think the industry as a whole will get more attention in the coming years.
+# Drumlin
 
-This potential can be realised through integrating GIS into applications. The web domain sees alot of this with [leaflet](https://leafletjs.com/) being the most popular tool, it is also one of the few javascript libraries I admire. 
+::: project-info
+Status
+:   Active development
 
-I would like to see such a tool but natively, so I started making *Drumlin*, a library for making interactive mapping applications. Its no where near being a fully fledged GIS but im pretty happy with is so far. 
+Source
+:   [github.com/lappn99/drumlin](https://github.com/lappn99/drumlin)
+:::
 
-Features:
+I'm a big fan of maps and geography in general. After working in Geographic Information Systems (GIS) for a while, my affection for them only grew, and I began to realise the potential GIS has beyond strictly the sciences. I think the industry as a whole will get more attention in the coming years.
+
+That potential can be realised by integrating GIS into applications. The web sees a lot of this, with [Leaflet](https://leafletjs.com/) being the most popular tool; it's also one of the few JavaScript libraries I admire.
+
+I wanted a tool like that, but native, so I started making *Drumlin*, a library for building interactive mapping applications. It's nowhere near a fully fledged GIS, but I'm pretty happy with it so far.
+
+### Features
 
 * Raster tile streaming and caching from different sources
-* Loading Raster datasets via GDAL
-* Loading Vector datasets via GDAL
-    * Only lines and points supported right now
-
+* Loading raster datasets via GDAL
+* Loading vector datasets via GDAL
+    * Only lines and points are supported right now
 
 It is named after the beautiful [drumlin field in and around Peterborough, Ontario](http://ontariogeoscience.net/regions/getawaycountry/sites/peterboroughdrumlins.html), and specifically the one [right next to Trent University](https://www.trentu.ca/natureareas/maps-physical-environment/lady-eaton-drumlin-nature-area).
 
-
----
-
-![Peterborough with vector line dataset of census tracts rendered in *Drumlin*](Media/drumlin.png)
+![Peterborough with a vector line dataset of census tracts, rendered in *Drumlin*](Media/drumlin.png)

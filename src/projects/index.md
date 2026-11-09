@@ -1,21 +1,29 @@
-## Projects
+---
+title: Side projects
+description: "Nathan Lapp's engine, graphics and systems side projects: a custom game engine in D, an OpenGL call tracer, a Raspberry Pi Pico multitasker, and more."
+image: Media/realm_landscape.png
+---
+
+# Side projects
+
+Engine, graphics and low-level systems work I've done outside of games. For games, see the [portfolio](portfolio/).
 
 ### [Realm Game Engine](projects/realm.html)
 
-> Game Engine built in the `D` programming language with OpenGL
+A custom game engine built in `D` with OpenGL: shader generation, an entity component system, shadows, and in-house UI.
 
-### [OpenGL call tracer and debugger](projects/gltrace.html)
+### [GLTrace: OpenGL call tracer and debugger](projects/gltrace.html)
 
-> Library to integrate OpenGL call tracing into a program built in `rust`
+A library, built in `Rust`, that hooks OpenGL function loading to trace every call a program makes, with timing and statistics.
 
 ### [Raspberry Pi Pico Multitasker](projects/pico_mt.html)
 
-> Little library to setup an environment in the Pico to run two tasks on the same core simultaneously
+A small library that runs multiple tasks on a single RP2040 core by switching context on a timer interrupt, written partly in ARM assembly.
 
 ### [Drumlin](projects/drumlin.html)
 
-> Interactive mapping library
+A native library for building interactive mapping (GIS) applications.
 
 ### [OpenLU](projects/openlu.html)
 
-> Lego Universe Server Emulator
+A server emulator for the defunct MMO _Lego Universe_.

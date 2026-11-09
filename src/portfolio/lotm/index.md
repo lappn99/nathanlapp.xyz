@@ -1,66 +1,56 @@
-<style type="text/css" rel="stylesheet">
-
-img{
-    width: 40%;
-    height: 40%;
-}
-
-
-
-
-</style>
+---
+title: Last of the Mystics
+description: "Action roguelike made in 72 hours for Mini Jam 171, then polished in the Finish Your Game Jam. Nathan built the player controller, progression, enemy AI and waves, and made the music."
+image: Media/lotm.png
+---
 
 # Last of the Mystics
 
-### Submission for _Mini Jam 171: Mystic_ and _"Finish Your Game" Jam 2024_
+::: project-info
+Role
+:   Lead programmer, game design, sound design and music
 
----
+Event
+:   _Mini Jam 171: Mystic_, then _"Finish Your Game" Jam 2024_
 
-## Role
+Duration
+:   72 hours, then a week-long polish jam
 
-Lead Programmer, Game Design, Sound Design, and Music
+Engine
+:   Godot
 
-## Engine
-
-Godot
-
----
+Link
+:   [Play on itch.io](https://redrebelinteractive.itch.io/last-of-the-mystics)
+:::
 
 ## About
 
-Initially made over 72 hours, _Last of the Mystics_ is an action-roguelike where the user fights off a ever escalating horde of enemies and builds their character through collecting an aresnal of weapons and upgrades. The game was created for _Mini Jam 171: Mystic_ and further refined for _"Finish Your Game" Jam 2024_, which is a non-competitive week-long game jam for the purpose of finishing past projects. 
+Initially made over 72 hours, _Last of the Mystics_ is an action roguelike where the player fights off an ever-escalating horde of enemies and builds their character by collecting an arsenal of weapons and upgrades. The game was created for _Mini Jam 171: Mystic_ and further refined for _"Finish Your Game" Jam 2024_, a non-competitive, week-long game jam for finishing past projects.
 
-![](Media/lotm.gif) 
+![](Media/lotm.gif)
 
+## My contribution
 
----
+For this jam I was mainly in charge of implementing the systems we had designed, including:
 
-## My Contribution
-
-For this jam I was mainly in charge of implementing the systems we had designed, this includes
-
-* Player Controller
-* Player Progression and Leveling
+* Player controller
+* Player progression and leveling
 * Enemy AI
 * Enemy wave progression
 * UI
 
-I also made the music and procured and implemented the sound effects.
-
----
+I also made the music, and sourced and implemented the sound effects.
 
 ## Afterwards
 
-As mentioned before we also joined the _Finish Your Game Jam_ to further work on and polish the game. This includes:
+As mentioned above, we also joined the _Finish Your Game Jam_ to keep working on and polishing the game. This included:
 
-* All new, hand made art (Made by my Jam partner)
-* Refining the systems, such as the enemy wave progression
+* All-new, hand-made art (made by my jam partner)
+* Refining systems such as the enemy wave progression
 * Implementing new weapons and upgrades
 * Adding more content in general
-* End state and credits scene (and a new song for that goes with it!)
-
----
+* An end state and credits scene (with a new song to go with it!)
 
 ### Play on itch.io
 
-<iframe frameborder="0" src="https://itch.io/embed/3100601?border_width=0" width="550" height="165"><a href="https://redrebelinteractive.itch.io/last-of-the-mystics">Last of the Mystics by RedRebelInteractive, GrilledBlueTuna, Sleeping Insomniac</a></iframe>
+<iframe src="https://itch.io/embed/3100601?border_width=0" width="550" height="165" title="Last of the Mystics on itch.io"><a href="https://redrebelinteractive.itch.io/last-of-the-mystics">Last of the Mystics by RedRebelInteractive, GrilledBlueTuna, Sleeping Insomniac</a></iframe>
