@@ -6,6 +6,12 @@ image: Media/lotm.png
 
 # Last of the Mystics
 
+:::: project-header
+
+```{=html}
+<div class="hero"><img src="Media/lotm.png" alt="Last of the Mystics"></div>
+```
+
 ::: project-info
 Role
 :   Lead programmer, game design, sound design and music
@@ -22,6 +28,8 @@ Engine
 Link
 :   [Play on itch.io](https://redrebelinteractive.itch.io/last-of-the-mystics)
 :::
+
+::::
 
 ## About
 

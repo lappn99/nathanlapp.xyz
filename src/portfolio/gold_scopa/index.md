@@ -6,6 +6,12 @@ image: Media/GoldScopa_Thumbnail.png
 
 # Gold Scopa
 
+:::: project-header
+
+```{=html}
+<div class="hero"><img src="Media/GoldScopa_Thumbnail.png" alt="Gold Scopa"></div>
+```
+
 ::: project-info
 Type
 :   Passion project, in development
@@ -16,6 +22,8 @@ Engine
 Link
 :   [Play on itch.io](https://redrebelinteractive.itch.io/gold-scopa)
 :::
+
+::::
 
 ## About
 

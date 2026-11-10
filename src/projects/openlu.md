@@ -5,6 +5,8 @@ description: "A server emulator for the defunct MMO Lego Universe, built from th
 
 # OpenLU
 
+:::: project-header
+
 ::: project-info
 Status
 :   Development ceased
@@ -12,6 +14,8 @@ Status
 Source
 :   [github.com/lappn99/OpenLU](https://github.com/lappn99/OpenLU)
 :::
+
+::::
 
 _Lego Universe_ was an MMORPG released in 2010. Unfortunately it had a very short lifespan, shutting down in 2012. I was one of the lucky ones who got to play it back then. A few years ago I was reminded of it, and stumbled upon a community dedicated to keeping it alive. They did this by reverse engineering the game's client-server protocol. Since clients are still readily available, all it takes is someone to implement a server, of which there [are (or were) many](https://lusprojects.github.io/).
 

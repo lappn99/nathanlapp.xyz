@@ -6,6 +6,12 @@ image: Media/coatforgoat_gameplay.png
 
 # Coat for the Goat
 
+:::: project-header
+
+```{=html}
+<div class="hero"><img src="Media/coatforgoat.png" alt="Coat for the Goat"></div>
+```
+
 ::: project-info
 Role
 :   Lead programmer, game design
@@ -28,6 +34,8 @@ Platform
 Link
 :   [Play on itch.io](https://redrebelinteractive.itch.io/coat-for-the-goat)
 :::
+
+::::
 
 ## About
 

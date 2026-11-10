@@ -5,6 +5,8 @@ description: "A library that runs multiple tasks on a single RP2040 core by savi
 
 # Raspberry Pi Pico Multitasker
 
+:::: project-header
+
 ::: project-info
 Status
 :   Finished
@@ -15,6 +17,8 @@ Context
 Hardware
 :   Raspberry Pi Pico (RP2040)
 :::
+
+::::
 
 I am very interested in the [RP2040](https://www.raspberrypi.com/documentation/microcontrollers/rp2040.html), the chip Raspberry Pi designed themselves, as it seemed unique and packs a lot of power into a small space. Because of this, I thought it would be fun to use it as the base for my final project, since we had a lot of flexibility in what we could choose.
 

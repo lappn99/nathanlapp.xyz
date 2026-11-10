@@ -6,6 +6,12 @@ image: Media/snowman_factory.png
 
 # Snowman Factory
 
+:::: project-header
+
+```{=html}
+<div class="hero"><img src="Media/snowman_factory.png" alt="Snowman Factory"></div>
+```
+
 ::: project-info
 Role
 :   Lead programmer, game design, sound design and music
@@ -25,6 +31,8 @@ Engine
 Link
 :   [Play on itch.io](https://dedalomaniac.itch.io/snowman-factory)
 :::
+
+::::
 
 ## About
 

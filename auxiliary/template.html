@@ -23,7 +23,7 @@ $endif$
 
   <style>
 :root {
-  --page-bg: #eef1f4;
+  --page-bg: #ffffff;
   --card-bg: #ffffff;
   --text: #1f2933;
   --muted: #5d6b7a;
@@ -50,13 +50,10 @@ body {
 
 /* The white card holding each page */
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 28px 48px 36px;
   background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  box-shadow: 0 4px 18px rgba(22, 32, 43, 0.06);
 }
 
 /* ---------- Header & navigation ---------- */
@@ -78,6 +75,13 @@ body {
   letter-spacing: -0.01em;
 }
 .site-header a.site-name:hover { text-decoration: none; color: var(--accent); }
+
+/* Name with a row of small icon links beside it */
+.site-brand { display: flex; align-items: center; gap: 1.25rem; }
+.icon-links { display: flex; align-items: center; gap: 0.9rem; }
+a.icon-link { display: inline-flex; color: var(--muted); }
+a.icon-link:hover { color: var(--accent); text-decoration: none; }
+a.icon-link svg { width: 20px; height: 20px; }
 
 .site-nav {
   display: flex;
@@ -131,6 +135,9 @@ hr {
   margin: 2.25rem 0;
 }
 
+/* A rule right after a heading sits tight underneath it */
+h1 + hr, h2 + hr, h3 + hr { margin: -0.35rem 0 1.25rem; }
+
 blockquote {
   margin: 0.5rem 0 1.25rem;
   padding: 0.1rem 1rem;
@@ -173,41 +180,127 @@ iframe { max-width: 100%; border: 0; }
   gap: 20px;
   margin: 1rem 0 2rem;
 }
+/* Plain tiles: just the image with the title (and a muted line) underneath */
 .card {
   display: flex;
   flex-direction: column;
   color: inherit;
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  overflow: hidden;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
 }
-.card:hover {
-  text-decoration: none;
-  color: inherit;
-  transform: translateY(-3px);
-  border-color: var(--accent);
-  box-shadow: 0 8px 20px rgba(22, 32, 43, 0.12);
-}
+.card:hover { text-decoration: none; color: inherit; }
 .page-content .card img {
   width: 100%;
   max-width: none;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border: 0;
-  border-radius: 0;
+  transition: opacity 0.15s ease;
 }
+.card:hover img { opacity: 0.85; }
 .card-title {
-  padding: 0.7rem 0.85rem 0;
+  margin-top: 0.6rem;
   font-weight: 650;
   line-height: 1.3;
   color: var(--heading);
 }
+.card:hover .card-title { color: var(--accent); }
 .card-meta {
-  padding: 0.2rem 0.85rem 0.8rem;
   font-size: 0.85rem;
   color: var(--muted);
+}
+
+/* ---------- Portfolio entries: image on the left, details and blurb on the right ---------- */
+.entry {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  padding: 1.75rem 0;
+  border-top: 1px solid var(--border);
+}
+.entry:first-of-type { border-top: 0; padding-top: 0.5rem; }
+.entry-img { flex: 0 0 min(30%, 260px); display: block; }
+.page-content .entry-img img {
+  width: 100%;
+  max-width: none;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+/* Home page: the same entries, but side by side with the text underneath each image */
+.entry-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  margin: 1rem 0 2rem;
+}
+.entry-grid .entry {
+  flex-direction: column;
+  gap: 14px;
+  padding: 0;
+  border-top: 0;
+}
+.entry-grid .entry-img { flex: none; width: 82%; }
+.page-content .entry-grid .entry-img img { aspect-ratio: 1 / 1; }
+.page-content .entry-grid .entry p { max-width: none; font-size: 0.88rem; line-height: 1.55; }
+@media (max-width: 800px) {
+  .entry-grid { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+/* Stand-in tile for entries that don't have a screenshot yet */
+.entry-img.placeholder {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 650;
+  color: var(--muted);
+  background: var(--soft);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.entry-img.placeholder:hover { text-decoration: none; color: var(--accent); }
+.entry-body { flex: 1; min-width: 0; }
+.entry h3 { margin: 0; font-size: 1.35rem; }
+.entry h3 a { color: var(--heading); }
+.entry h3 a:hover { color: var(--accent); text-decoration: none; }
+.page-content .entry p { margin: 0.5rem 0 0; max-width: 62ch; }
+.page-content .entry .entry-sub { margin-top: 0.1rem; color: var(--muted); }
+.page-content .entry .facts { font-size: 0.95rem; line-height: 1.55; }
+.entry .facts em { color: var(--muted); }
+.entry a.more { font-weight: 600; }
+@media (max-width: 700px) {
+  .entry { flex-direction: column; gap: 14px; }
+  .entry-img { flex: none; width: 100%; }
+  /* A full-width square would fill the whole phone screen, so use a shorter crop */
+  .page-content .entry-img img,
+  .entry-img.placeholder { aspect-ratio: 16 / 9; }
+}
+
+/* ---------- Project header: hero image beside the project's details ---------- */
+.project-header {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  margin: 1.25rem 0 2rem;
+}
+.project-header .hero { flex: 0 0 min(40%, 380px); display: block; }
+.page-content .project-header .hero img {
+  width: 100%;
+  max-width: none;
+}
+/* Beside the image the details sit as a plain label list, not a second box */
+.project-header .project-info {
+  flex: 1;
+  min-width: 0;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: 0;
+  border-radius: 0;
+}
+@media (max-width: 700px) {
+  .project-header { flex-direction: column; gap: 16px; }
+  .project-header .hero { flex: none; width: 100%; }
 }
 
 /* ---------- Project info box (role, engine, etc.) ---------- */
@@ -248,18 +341,6 @@ iframe { max-width: 100%; border: 0; }
 .intro h1 { margin: 0 0 0.25rem; }
 .intro .tagline { margin: 0; font-size: 1.15rem; color: var(--muted); }
 
-.buttons { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.5rem 0 0.5rem; }
-a.button {
-  display: inline-block;
-  padding: 0.55rem 1.1rem;
-  border: 1px solid var(--accent);
-  border-radius: 8px;
-  font-weight: 600;
-  color: var(--accent);
-}
-a.button:hover { background: var(--accent); color: #fff; text-decoration: none; }
-a.button.primary { background: var(--accent); color: #fff; }
-a.button.primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
 
 /* ---------- Footer ---------- */
 .site-footer {

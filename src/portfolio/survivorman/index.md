@@ -1,16 +1,21 @@
 ---
 title: "Survivorman VR: The Descent"
-description: "VR survival game for Meta Quest and PlayStation VR. Nathan was the sole programmer: gameplay, minigames, the Dynamic Digital Humans animation pipeline, and GPU optimization."
+description: "VR survival game for Meta Quest and PlayStation VR. Nathan was the programmer on gameplay, minigames, the Dynamic Digital Humans animation pipeline, and GPU optimization."
 image: Media/smvr.jpeg
 ---
 
 # Survivorman VR: The Descent
 
-[![Watch the Survivorman VR: The Descent trailer on YouTube](https://img.youtube.com/vi/BUNZlBwrZ0w/maxresdefault.jpg)](https://www.youtube.com/watch?v=BUNZlBwrZ0w "Survivorman VR: The Descent | Official Trailer")
+:::: project-header
+
+```{=html}
+<a class="hero" href="https://www.youtube.com/watch?v=BUNZlBwrZ0w" title="Survivorman VR: The Descent | Official Trailer"><img src="https://img.youtube.com/vi/BUNZlBwrZ0w/maxresdefault.jpg" alt="Watch the Survivorman VR: The Descent trailer on YouTube"></a>
+```
+
 
 ::: project-info
 Role
-:   Programmer (the only technical member of the team)
+:   Programmer
 
 Studio
 :   Cream Productions, co-produced with Occupied VR
@@ -31,6 +36,8 @@ Trailer
 :   [Watch on YouTube](https://www.youtube.com/watch?v=BUNZlBwrZ0w)
 :::
 
+::::
+
 ## About
 
 _Survivorman VR: The Descent_ is a VR game for Meta Quest and PlayStation VR. It is a licensed game adapted from the Canadian show _Survivorman_ starring Les Stroud. Players find themselves trapped on a glacier in the far north and must navigate the environment while completing challenges to survive.
@@ -39,7 +46,7 @@ This game was a co-production between _Cream Productions_ and _Occupied VR_.
 
 ## What I did
 
-During my time with _Cream_ on this project, I was the only programmer and the only person with a technical background, so I worked on many different areas of the project, from gameplay programming to optimization and graphics debugging.
+During my time with _Cream_ on this project, I worked on many different areas of the project, from gameplay programming to optimization and graphics debugging.
 
 ### Dynamic Digital Humans
 

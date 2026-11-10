@@ -6,6 +6,12 @@ image: Media/realm_landscape.png
 
 # Realm Game Engine
 
+:::: project-header
+
+```{=html}
+<div class="hero"><img src="Media/realm_landscape.png" alt="A terrain scene rendered in the Realm engine"></div>
+```
+
 ::: project-info
 Status
 :   Development ceased
@@ -16,6 +22,8 @@ Language
 Source
 :   [github.com/Realm-Engine/realm](https://github.com/Realm-Engine/realm)
 :::
+
+::::
 
 Originally starting as a tool for experimenting with terrain generation, `realm` developed into probably my best attempt (so far) at a fully fledged game engine.
 

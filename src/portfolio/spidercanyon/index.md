@@ -6,6 +6,12 @@ image: Media/SC_banner.png
 
 # Spider Canyon
 
+:::: project-header
+
+```{=html}
+<div class="hero"><img src="Media/SC_banner.png" alt="Spider Canyon"></div>
+```
+
 ::: project-info
 Role
 :   Lead developer
@@ -28,6 +34,8 @@ Platform
 Link
 :   [Spider Canyon on Steam](https://store.steampowered.com/app/3451200/Spider_Canyon/)
 :::
+
+::::
 
 ## About
 

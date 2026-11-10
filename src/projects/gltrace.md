@@ -5,6 +5,8 @@ description: "A Rust library that hooks OpenGL function loading to trace every c
 
 # GLTrace / GLHooker
 
+:::: project-header
+
 ::: project-info
 Status
 :   Active development
@@ -15,6 +17,8 @@ Language
 Source
 :   [github.com/lappn99/gltrace_rs](https://github.com/lappn99/gltrace_rs)
 :::
+
+::::
 
 The concept and technology of function hooking has always interested me, and I've always wanted to create an OpenGL debugger like `RenderDoc` or `Nvidia Nsight`. I also chose to build it in Rust, in a bid to learn the language better.
 

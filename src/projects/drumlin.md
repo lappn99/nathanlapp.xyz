@@ -6,6 +6,12 @@ image: Media/drumlin.png
 
 # Drumlin
 
+:::: project-header
+
+```{=html}
+<div class="hero"><img src="Media/drumlin.png" alt="Peterborough with a vector line dataset rendered in Drumlin"></div>
+```
+
 ::: project-info
 Status
 :   Active development
@@ -13,6 +19,8 @@ Status
 Source
 :   [github.com/lappn99/drumlin](https://github.com/lappn99/drumlin)
 :::
+
+::::
 
 I'm a big fan of maps and geography in general. After working in Geographic Information Systems (GIS) for a while, my affection for them only grew, and I began to realise the potential GIS has beyond strictly the sciences. I think the industry as a whole will get more attention in the coming years.
 

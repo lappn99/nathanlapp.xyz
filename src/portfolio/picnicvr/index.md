@@ -6,6 +6,12 @@ image: Media/picnicvr.gif
 
 # DENG GAO SHANG GAO RēVERIE
 
+:::: project-header
+
+```{=html}
+<div class="hero"><img src="Media/picnicvr.gif" alt="DENG GAO SHANG GAO RēVERIE gameplay"></div>
+```
+
 ::: project-info
 Role
 :   Design and implementation of hand-gesture interactions
@@ -25,6 +31,8 @@ Engine
 Platform
 :   Meta Quest
 :::
+
+::::
 
 ## About
 
