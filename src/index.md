@@ -12,7 +12,7 @@ description: "Gameplay and systems programmer in Toronto. Shipped Spider Canyon 
 </div>
 ```
 
-I build the systems underneath games: engine architecture, graphics programming, and the interactive systems players actually touch. I've shipped a puzzle platformer on Steam, built VR gameplay and hand-interaction systems for Meta Quest, written my own game engine in D, and made low-level tools for debugging OpenGL.
+I'm a game programmer who likes experimenting and creative problem solving. I shipped a puzzle platformer on Steam, built VR gameplay and hand interaction for Meta Quest, wrote my own game engine in D, and made some tools for debugging OpenGL.
 
 My background is in Computer Science, specifically computer graphics, data structures and high-performance computing, as well as Geographic Information Systems (GIS). I also do game design, sound design and music for my own games.
 
