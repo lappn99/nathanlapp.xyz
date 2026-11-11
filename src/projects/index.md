@@ -14,7 +14,7 @@ Engine, graphics and low-level systems work I've done outside of games. For game
   <div class="entry-body">
     <h3><a href="projects/realm.html">Realm Game Engine</a></h3>
     <p class="entry-sub">Custom game engine</p>
-    <p class="facts"><em>Language:</em> D, with OpenGL<br><em>Status:</em> Development ceased</p>
+    <p class="facts"><em>Language:</em> D, with OpenGL and SDL2<br><em>Status:</em> Development ceased</p>
     <p>A custom game engine built in D with OpenGL: shader generation, an entity component system, shadows, and in-house UI.</p>
     <p><a class="more" href="projects/realm.html">Read more &rarr;</a></p>
   </div>

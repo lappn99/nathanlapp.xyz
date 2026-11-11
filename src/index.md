@@ -45,7 +45,7 @@ My background is in Computer Science, specifically computer graphics, data struc
     <a class="entry-img" href="projects/realm.html"><img src="Media/realm_demo.gif" alt="A lit scene with shadows rendered in the Realm engine"></a>
     <div class="entry-body">
       <p>A custom game engine built in D with OpenGL: shader generation, an entity component system, shadows, and in-house UI.</p>
-      <p class="facts"><em>Language:</em> D, with OpenGL<br><em>Status:</em> Development ceased</p>
+      <p class="facts"><em>Language:</em> D, with OpenGL and SDL2<br><em>Status:</em> Development ceased</p>
       <p><a class="more" href="projects/realm.html">Read more &rarr;</a></p>
     </div>
   </article>

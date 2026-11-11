@@ -17,7 +17,7 @@ Status
 :   Development ceased
 
 Language
-:   D, with OpenGL
+:   D, with OpenGL and SDL2
 
 Source
 :   [github.com/Realm-Engine/realm](https://github.com/Realm-Engine/realm)
